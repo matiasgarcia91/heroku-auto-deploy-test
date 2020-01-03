@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const PORT = 4002;
+const PORT = process.env.PORT || 4002;
 
 const User = require("./models").User;
 const TodoList = require("./models").TodoList;
